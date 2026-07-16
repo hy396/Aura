@@ -1,0 +1,34 @@
+[
+	{
+		"Name": "Attributes.Primart.Strength",
+		"1": 15,
+		"10": 26,
+		"15": 33,
+		"20": 37,
+		"40": 52
+	},
+	{
+		"Name": "Attributes.Primart.Intelligence",
+		"1": 5,
+		"10": 7,
+		"15": 13,
+		"20": 15,
+		"40": 16
+	},
+	{
+		"Name": "Attributes.Primart.Resilience",
+		"1": 15,
+		"10": 21,
+		"15": 25,
+		"20": 27,
+		"40": 31
+	},
+	{
+		"Name": "Attributes.Primart.Vigor",
+		"1": 11,
+		"10": 16,
+		"15": 21,
+		"20": 25,
+		"40": 30
+	}
+]
