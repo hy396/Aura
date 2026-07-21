@@ -19,18 +19,20 @@ public:
 	FGameplayTag StartupInputTag;
 
 	/**
-	 * 获取当前等级技能描述
+	 * 获取当前等级技能描述（蓝图可覆写，被动技能在蓝图里编写描述）
 	 * @param Level 技能等级
 	 * @return 技能描述富文本
 	 */
-	virtual FString GetDescription(int32 Level);
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+	FString GetDescription(int32 Level);
 
 	/**
-	 * 获取下一等级技能描述
+	 * 获取下一等级技能描述（蓝图可覆写，被动技能在蓝图里编写描述）
 	 * @param Level 下一等级
 	 * @return 技能描述附文本
 	 */
-	virtual FString GetNextLevelDescription(int32 Level);
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+	FString GetNextLevelDescription(int32 Level);
 	/**
 	 * 当前技能的技能描述，将共用部分抽离出来为单个函数
 	 * @param Level 显示的技能等级

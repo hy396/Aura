@@ -7,12 +7,12 @@
 #include "Aura/Public/MyGameplayTags.h"
 
 
-FString UAuraFireBolt::GetDescription(int32 Level)
+FString UAuraFireBolt::GetDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level, L"火球术");
 }
 
-FString UAuraFireBolt::GetNextLevelDescription(int32 Level)
+FString UAuraFireBolt::GetNextLevelDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level, L"下一等级");
 }

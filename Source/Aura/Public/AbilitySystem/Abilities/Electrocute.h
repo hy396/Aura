@@ -14,20 +14,8 @@ class AURA_API UElectrocute : public UAuraBeamSpell
 {
 	GENERATED_BODY()
 public:
-	
-	/**
-	 * 获取当前等级技能描述
-	 * @param Level 技能等级
-	 * @return 技能描述富文本
-	 */
-	virtual FString GetDescription(int32 Level) override;
-
-	/**
-	 * 获取下一等级技能描述
-	 * @param Level 下一等级
-	 * @return 技能描述附文本
-	 */
-	virtual FString GetNextLevelDescription(int32 Level) override;
+	virtual FString GetDescription_Implementation(int32 Level) override;
+	virtual FString GetNextLevelDescription_Implementation(int32 Level) override;
 
 	/**
 	 * 当前技能的技能描述，将共用部分抽离出来为单个函数
@@ -37,4 +25,5 @@ public:
 	 */
 	virtual FString GetDescriptionAtLevel(int32 Level, const FString& Title) override;
 	
+
 };

@@ -11,12 +11,12 @@
 #include "Runtime/Core/Tests/Containers/TestUtils.h"
 
 
-FString UProjectileBarrage::GetDescription(int32 Level)
+FString UProjectileBarrage::GetDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level,L"超位魔法轰炸");
 }
 
-FString UProjectileBarrage::GetNextLevelDescription(int32 Level)
+FString UProjectileBarrage::GetNextLevelDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level,L"下一等级");
 }

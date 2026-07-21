@@ -4,12 +4,12 @@
 #include "AbilitySystem/Abilities/ArcaneShards.h"
 
 
-FString UArcaneShards::GetDescription(int32 Level)
+FString UArcaneShards::GetDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level, L"奥术爆发");
 }
 
-FString UArcaneShards::GetNextLevelDescription(int32 Level)
+FString UArcaneShards::GetNextLevelDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level, L"下一等级");
 }

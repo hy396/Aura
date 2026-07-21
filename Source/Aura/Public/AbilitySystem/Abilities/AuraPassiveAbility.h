@@ -7,7 +7,9 @@
 #include "AuraPassiveAbility.generated.h"
 
 /**
- * 
+ * 被动技能基类。被动技能完全在蓝图（GA_HaloOfProtection / GA_LifeSiphon / GA_ManaSiphon 等）中实现，
+ * 其技能描述请在蓝图事件图中覆写 GetDescription(Level) 与 GetNextLevelDescription(Level) 两个事件，
+ * 直接返回富文本字符串即可（基类已将这两个函数声明为 BlueprintNativeEvent）。
  */
 UCLASS()
 class AURA_API UAuraPassiveAbility : public UAuraGameplayAbility

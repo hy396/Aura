@@ -91,10 +91,8 @@ class AURA_API UProjectileBarrage : public UAuraGameplayAbility
 {
 	GENERATED_BODY()
 public:
-	// 获取投射技能描述
-	virtual FString GetDescription(int32 Level) override;
-	// 获取投射技能下一等级描述
-	virtual FString GetNextLevelDescription(int32 Level) override;
+	virtual FString GetDescription_Implementation(int32 Level) override;
+	virtual FString GetNextLevelDescription_Implementation(int32 Level) override;
 	FString GetDescriptionAtLevel(int32 Level, const FString& Title); //获取对应等级的技能描述
 
 	UFUNCTION(BlueprintPure)

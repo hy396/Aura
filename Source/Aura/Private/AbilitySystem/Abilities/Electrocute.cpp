@@ -3,12 +3,12 @@
 
 #include "AbilitySystem/Abilities/Electrocute.h"
 
-FString UElectrocute::GetDescription(int32 Level)
+FString UElectrocute::GetDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level, L"闪电弧");
 }
 
-FString UElectrocute::GetNextLevelDescription(int32 Level)
+FString UElectrocute::GetNextLevelDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level, L"下一等级");
 }

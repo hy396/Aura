@@ -5,12 +5,12 @@
 
 #include "AbilitySystem/AuraAbilitySystemLibrary.h"
 
-FString UAuraFireBlast::GetDescription(int32 Level)
+FString UAuraFireBlast::GetDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level, L"火焰爆发");
 }
 
-FString UAuraFireBlast::GetNextLevelDescription(int32 Level)
+FString UAuraFireBlast::GetNextLevelDescription_Implementation(int32 Level)
 {
 	return GetDescriptionAtLevel(Level, L"下一等级");
 }

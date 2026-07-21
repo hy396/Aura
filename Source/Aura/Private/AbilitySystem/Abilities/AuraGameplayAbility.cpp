@@ -5,12 +5,12 @@
 
 #include "AbilitySystem/AuraAttributeSet.h"
 
-FString UAuraGameplayAbility::GetDescription(int32 Level)
+FString UAuraGameplayAbility::GetDescription_Implementation(int32 Level)
 {
 	return FString::Printf(TEXT("%s, <Level>%d</>"), L"默认技能名称 - 请覆写技能的GetDescription来实现技能的描述", Level);
 }
 
-FString UAuraGameplayAbility::GetNextLevelDescription(int32 Level)
+FString UAuraGameplayAbility::GetNextLevelDescription_Implementation(int32 Level)
 {
 	return FString::Printf(TEXT("下一等级：<Level>%d</> 请覆写技能的GetNextLevelDescription来实现技能的描述。"), Level);
 }
